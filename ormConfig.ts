@@ -9,6 +9,6 @@ const ormConfig: DataSourceOptions = {
   database: process.env.POSTGRES_DATABASE || 'marinas-todolist',
   entities: [__dirname + '/**/**/*.entity{.ts,.js}'],
   synchronize: true,
-  //ssl: { rejectUnauthorized: false },
+  ssl: { rejectUnauthorized: false },
 };
 export default ormConfig;
